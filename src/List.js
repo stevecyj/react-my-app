@@ -5,12 +5,9 @@ class List extends React.Component {
     render() {
         return (
             <ol>
-                <Item />
-                <Item />
-                <Item />
-                <Item />
-                <Item />
-                <Item />
+                <Item text="Learn JavaScript" price={300} />
+                <Item text="Learn React" />
+                <Item text="Make Money" />
             </ol>
         )
     }

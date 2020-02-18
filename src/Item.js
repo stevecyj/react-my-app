@@ -2,7 +2,11 @@ import React from 'react'
 
 class Item extends React.Component {
     render() {
-        return <li>hello hi hi hi</li>
+        return (
+            <li>
+                {this.props.text} ({this.props.price + 21})
+            </li>
+        )
     }
 }
 

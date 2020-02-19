@@ -1,14 +1,17 @@
 import React from 'react'
 import Item from './Item'
 
+const steps = ['Learn JavaScript', 'Learn React', 'Make Money', 'Buy a House']
+
 class List extends React.Component {
     render() {
         return (
-            <ol>
-                <Item text="Learn JavaScript" price={300} />
-                <Item text="Learn React" />
-                <Item text="Make Money" />
-            </ol>
+            <div>
+                {steps.map((text, i) => (
+                    <Item text={text} key={i}></Item>
+                ))}
+                <Item>{123}</Item>
+            </div>
         )
     }
 }
